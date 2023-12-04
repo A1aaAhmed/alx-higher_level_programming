@@ -1,5 +1,17 @@
 #!/usr/bin/python3
-def add_tuple(tuple_a=(), tuple_b=()):
-    tuple_a += (0, 0)
-    tuple_b += (0, 0)
-    return(tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1])
+
+"""
+    /**
+      * update_dictionary - eplaces or adds key/value in a dictionary
+      * @a_dictionary: dictionary
+      * @key: key
+      * @value: value
+      *
+      * Return: dictionary
+      */
+"""
+
+
+def update_dictionary(a_dictionary, key, value):
+    a_dictionary.update([(key, value)])
+    return a_dictionary
